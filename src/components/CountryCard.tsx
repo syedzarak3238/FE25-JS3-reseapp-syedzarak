@@ -4,7 +4,7 @@ import type { CountrySummary } from "../types/country";
 type Props = { country: CountrySummary };
 
 export default function CountryCard({ country }: Props) {
-  // Vi tar med sök/filter/sida i länken så "Tillbaka" kan återskapa vyn
+  
   const { search } = useLocation();
 
   return (

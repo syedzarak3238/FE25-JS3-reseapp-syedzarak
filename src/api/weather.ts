@@ -4,7 +4,6 @@ import type {
   GeocodingResponse,
   Weather,
 } from "../types/weather";
-
 // Försök hitta huvudstadens koordinater, annars använd landets latlng
 async function findCoordinates(
   country: Country,

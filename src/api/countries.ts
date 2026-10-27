@@ -1,9 +1,11 @@
 import type { Country, CountrySummary } from "../types/country";
 import { NotFoundError } from "./errors";
+import { wait } from "../lib/wait";
 
 const BASE_URL = "https://countries.dev";
 
 export async function fetchAllCountries(): Promise<CountrySummary[]> {
+  await wait(4000);
   const response = await fetch(
     `${BASE_URL}/countries?fields=name,alpha3Code,region,capital,flags,population,area`,
   );
@@ -18,6 +20,7 @@ export async function fetchAllCountries(): Promise<CountrySummary[]> {
 }
 
 export async function fetchCountry(code: string): Promise<Country> {
+  await wait(4000);
   const response = await fetch(`${BASE_URL}/alpha/${encodeURIComponent(code)}`);
   if (response.status === 404 || response.status === 400) {
     throw new NotFoundError();
@@ -32,3 +35,5 @@ export async function fetchCountry(code: string): Promise<Country> {
   }
   return data as Country;
 }
+
+

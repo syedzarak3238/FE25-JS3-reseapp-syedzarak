@@ -5,6 +5,6 @@ export function useCountries() {
   return useQuery({
     queryKey: ["countries"],
     queryFn: fetchAllCountries,
-    staleTime: Infinity, // länderlistan ändras nästan aldrig
+    staleTime: Infinity, 
   });
 }

@@ -22,7 +22,7 @@ export default function CountryPage() {
     return (
       <div className="flex flex-col gap-4">
         {backLink}
-        <Spinner label="Wait while we load the destination information..." />
+        <Spinner label="Vänta medan vi laddar in destinationsinformationen..." />
       </div>
     );
   }

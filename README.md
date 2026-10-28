@@ -24,7 +24,7 @@ En reseapp som läser data från flera API:er och visar den på ett tydligt och 
 Du behöver Node.js installerat.
 
 ```bash
-git clone [DIN REPO-LÄNK]
+
 cd [MAPPNAMN]
 npm install
 npm run dev
@@ -42,7 +42,7 @@ npm run build
 
 ## Ramverk och varför
 
-Jag valde **React (Vite) med React Router**. [SKRIV DINA EGNA SKÄL, t.ex.: Appen behöver ingen server-rendering och använder bara öppna API:er utan nycklar, så en ren klientapp räcker. Vite är snabbt att starta och React Router passar bra för sidorna och URL-parametrarna (`useSearchParams`).]
+Jag valde **React (Vite) med React Router**. t.ex.: Appen behöver ingen server-rendering och använder bara öppna API:er utan nycklar, så en ren klientapp räcker. Vite är snabbt att starta och React Router passar bra för sidorna och URL-parametrarna (`useSearchParams`).]
 
 Tekniker som används:
 
@@ -82,8 +82,8 @@ Jag har använt **Claude (Anthropic)** i det här projektet till:
 - förklaring av hur man lägger till shadcn/ui 
 - att få hjälp att förstå hur man visar laddning och fel vid redovisningen
 
-Jag har gått igenom koden fil för fil, testat appen själv och kan förklara all kod i projektet, även den jag fick hjälp med. [ANPASSA TEXTEN SÅ ATT DEN STÄMMER MED VAD DU FAKTISKT GJORT]
+Jag har gått igenom koden fil för fil, testat appen själv och kan förklara all kod i projektet, även den jag fick hjälp med. 
 
 ## Reflektion
 
-[SKRIV DINA EGNA 3–5 MENINGAR. Utkast att utgå från och ändra: "Det som gick bra var att dela upp koden i lager (typer, api, hooks, komponenter, sidor), vilket gjorde det lätt att hitta och ändra saker. Det svåraste var att förstå hur URL-state med useSearchParams fungerar och hur flera API:er kan ladda och misslyckas oberoende av varandra. Nästa gång skulle jag börja tidigare, committa oftare i mindre steg och validera API-svaren med Zod i stället för att bara typa dem."]
+Det som gick bra var att dela upp koden i lager (typer, api, hooks, komponenter, sidor), vilket gjorde det lätt att hitta och ändra saker. Det svåraste var att förstå hur URL-state med useSearchParams fungerar och hur flera API:er kan ladda och misslyckas oberoende av varandra. Nästa gång skulle jag börja tidigare, committa oftare i mindre steg och validera API-svaren med Zod i stället för att bara typa dem."

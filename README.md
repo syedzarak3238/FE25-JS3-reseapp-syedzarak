@@ -2,9 +2,9 @@
 
 En reseapp som läser data från flera API:er och visar den på ett tydligt och tillgängligt sätt. Startsidan har en paginerad lista med länder med sökfält och regionfilter. Varje land har en detaljsida med basfakta, aktuellt väder och en kort introtext med bild från Wikipedia.
 
-**Publicerad app:** [KLISTRA IN DIN VERCEL/NETLIFY-LÄNK HÄR]
 
-**GitHub-repo:** [KLISTRA IN DIN REPO-LÄNK HÄR]
+
+
 
 ## Vad appen gör
 
@@ -72,16 +72,14 @@ src/
 
 ## Fördjupningar
 
-Inga. Projektet är gjort på G-nivå. [ÄNDRA OM DU GÖR NÅGON FÖRDJUPNING]
+Inga. Projektet är gjort på G-nivå. 
 
 ## AI-redovisning
 
 Jag har använt **Claude (Anthropic)** i det här projektet till:
 
 - att få en första version av projektets struktur och kod (komponenter, hooks, API-filer och konfiguration)
-- att få stegvisa förklaringar av koden eftersom jag missat flera lektioner
-- felsökning (t.ex. npm-fel och vit sida i webbläsaren)
-- förklaring av hur man lägger till shadcn/ui [TA BORT DENNA RAD OM DU INTE GJORDE DET]
+- förklaring av hur man lägger till shadcn/ui 
 - att få hjälp att förstå hur man visar laddning och fel vid redovisningen
 
 Jag har gått igenom koden fil för fil, testat appen själv och kan förklara all kod i projektet, även den jag fick hjälp med. [ANPASSA TEXTEN SÅ ATT DEN STÄMMER MED VAD DU FAKTISKT GJORT]

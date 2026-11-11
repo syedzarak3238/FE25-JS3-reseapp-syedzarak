@@ -8,7 +8,7 @@ export default function Navbar() {
         className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3"
       >
         <Link to="/" className="text-xl font-bold">
-          ✈️ Reseapp 
+          ✈️ Reseapp ✈️
         </Link>
         <Link to="/" className="underline">
           Alla länder

@@ -8,7 +8,10 @@ import CountryCard from "../components/CountryCard";
 import Spinner from "../components/Spinner";
 import ErrorMessage from "../components/ErrorMessage";
 
-const PAGE_SIZE = 12;
+useDocumentTitle(data ? `${data.name} – Reseapp` : "Reseapp");
+
+const PAGE_SIZE = 14;
+
 
 export default function HomePage() {
   const { data, isPending, isError, refetch } = useCountries();

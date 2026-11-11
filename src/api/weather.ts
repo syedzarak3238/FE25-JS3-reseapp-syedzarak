@@ -4,7 +4,7 @@ import type {
   GeocodingResponse,
   Weather,
 } from "../types/weather";
-import { wait } from "../lib/wait";
+
 
 // Försök hitta huvudstadens koordinater, annars använd landets latlng
 async function findCoordinates(

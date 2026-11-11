@@ -8,14 +8,19 @@ import CountryCard from "../components/CountryCard";
 import Spinner from "../components/Spinner";
 import ErrorMessage from "../components/ErrorMessage";
 
-useDocumentTitle(data ? `${data.name} – Reseapp` : "Reseapp");
 
-const PAGE_SIZE = 14;
+const PAGE_SIZE = 15;
 
 
 export default function HomePage() {
   const { data, isPending, isError, refetch } = useCountries();
   const { page, query, region, setPage, setQuery, setRegion } = useCountryFilters();
+
+  const clearFilters = () => {
+    setQuery("");
+    setRegion("All");
+    setPage(1);
+  };
 
   // Filtrera i appen, inga nya API-anrop
   const filtered = useMemo(() => {
@@ -37,6 +42,17 @@ export default function HomePage() {
       <h1 className="text-2xl font-bold">Länder</h1>
       <SearchBar value={query} onChange={setQuery} />
       <RegionFilter selected={region} onSelect={setRegion} />
+
+
+      {(query !== "" || region !== "All") && (
+  <button
+    type="button"
+    onClick={clearFilters}
+    className="self-start text-blue-700 underline"
+  >
+    Rensa filter
+  </button>
+)}
 
       {isPending && <Spinner label="Hämtar länder..." />}
       {isError && <ErrorMessage message="Kunde inte hämta länderna." onRetry={() => refetch()} />}

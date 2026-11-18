@@ -62,7 +62,20 @@ src/
   lib/         Hjälpfunktioner (formatering, väderkoder)
   components/  Små komponenter med ett tydligt ansvar
   pages/       Sidor (startsida, detaljsida, 404)
+
 ```
+
+## Arbetssätt med Git
+
+Jag har arbetat med feature-branches och pull requests på GitHub:
+
+- `feature/page-titles`: sidtitlar på alla sidor
+- `feature/loading-and-filters`: skelettladdning och "Rensa filter"
+- `feature/readme-update`: uppdaterad dokumentation
+
+Varje ändring byggs i en egen branch, testas med `npm run build` och slås ihop med `main` via en pull request på GitHub.
+
+
 
 ## API:er som används
 
